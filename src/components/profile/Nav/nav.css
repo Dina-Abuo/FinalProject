@@ -1,7 +1,48 @@
+body {
+    --body-color: #f0f2f5;
+    --color-blue: #1876f2;
+    --color-gree: #65676b;
+
+}
+
+.content {
+    background-color:white;
+}
+
 .div-nav {
     border-top: 1px solid #ccc;
     width: 70%;
     margin: auto;
-
 }
 
+.nav-item:hover {
+    border-radius: 10px;
+    background-color: var(--body-color);
+}
+
+.navLink {
+    color: var(--color-gree);
+    text-decoration: none;
+    height: 50px;
+    line-height: 1.3333;
+    font-weight: 600;
+    position: relative;
+    padding: 10px;
+}
+
+.navLink:hover {
+    color: var(--color-gree);
+    text-decoration: none;
+}
+
+.navLink:focus {
+    color: var(--color-blue);
+    border-bottom: 4px solid var(--color-blue);
+}
+
+#basic-nav-dropdown {
+    height: 50px;
+    color: var(--color-gree);
+    line-height: 1.3333;
+    font-weight: 600;
+}

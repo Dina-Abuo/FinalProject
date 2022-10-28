@@ -12,9 +12,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 export default function Porfile() {
     return (
         <>
-
-
-
             <Router>
                 <HeadProfile />
                 <Nav />
@@ -26,10 +23,7 @@ export default function Porfile() {
                     <Route path='/vidoes' element={<Vidoes />} />
                     <Route path='/check' element={<CheckIn />} />
                 </Routes>
-
             </Router>
-
-
         </>
     )
 }

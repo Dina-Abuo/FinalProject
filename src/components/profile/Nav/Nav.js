@@ -1,51 +1,58 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav.css'
 export default function Nav() {
+
+    // const changeColor = () => {
+    //     document.getElementsByClassName("nav-link").style.color = "#1876f2;";
+    // }
+
     return (
         <>
-            <div className='div-nav'>
-                <nav className="navbar navbar-expand-lg ">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink className="nav-link active" aria-current="page" to="/"> Posts </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink NavLink className="nav-link" to="/about"> About </NavLink >
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/friends" > Friends </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/photos" > photos </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/vidoes" > Videos </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/check" > Ckeck-ins </NavLink>
-                        </li>
-                        <li>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            </NavDropdown>
-                        </li>
-                    </ul>
+            <div className='content'> 
+                <div className='div-nav'>
+                    <nav className="navbar navbar-expand-lg ">
+                        <ul className="navbar-nav">
+                            <li className="nav-item d-flex align-items-center">
+                                <Link className="navLink" aria-current="page" to="/"> Posts </Link>
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <Link NavLink className="navLink" to="/about"> About </Link >
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <Link className="navLink" to="/friends" > Friends </Link>
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <Link className="navLink" to="/photos" > photos </Link>
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <Link className="navLink" to="/vidoes" > Videos </Link>
+                            </li>
+                            <li className="nav-item d-flex align-items-center">
+                                <Link className="navLink " to="/check" > Ckeck-ins </Link>
+                            </li>
+                            <li>
+                                <NavDropdown title="More" id="basic-nav-dropdown" className='mt-1'>
+                                    <NavDropdown.Item href="/sports">Sports</NavDropdown.Item>
+                                    <NavDropdown.Item href="/music">Music</NavDropdown.Item>
+                                    <NavDropdown.Item href="/movies">Movies</NavDropdown.Item>
+                                    <NavDropdown.Item href="/shows">TV shows</NavDropdown.Item>
+                                    <NavDropdown.Item href="/books">Books</NavDropdown.Item>
+                                    <NavDropdown.Item href="/links">Links</NavDropdown.Item>
+                                    <NavDropdown.Item href="/evante">Evante</NavDropdown.Item>
+                                    <NavDropdown.Item href="/question">Question</NavDropdown.Item>
+                                    <NavDropdown.Item href="/reviews">Reviews given</NavDropdown.Item>
+                                    <NavDropdown.Item href="/gourps">Gourps</NavDropdown.Item>
+                                    <NavDropdown.Item href="/mange">Mange sections</NavDropdown.Item>
+                                </NavDropdown>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-                </nav>
+
             </div>
-
-
 
 
         </>

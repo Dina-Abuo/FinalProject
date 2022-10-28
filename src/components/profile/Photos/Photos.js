@@ -1,10 +1,13 @@
 import React from 'react'
+import './photo.css'
 export default function Photos() {
     return (
-        <div>
-        
-            <h1>PHOTOS</h1>
+        <>
+        <div className='content1'>
+            
+                <h1>PHOTOS</h1>
         </div>
+        </>
     )
 
 }
