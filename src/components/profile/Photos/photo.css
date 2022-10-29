@@ -1,0 +1,8 @@
+body {
+    --body-color: #f0f2f5;
+    background-color: var(--body-color);
+}
+
+.content1{
+ background-color: var(--body-color)
+}
