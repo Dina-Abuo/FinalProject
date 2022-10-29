@@ -1,18 +1,20 @@
 body {
     --color-blue: #1876f2;
     --color-blue-light: #e4e6eb;
+    --color-gree: #65676b;
 }
 
 .content {
     background-color: white;
+
 }
 
 .classprofile {
     position: relative;
     width: 70%;
-    height: 600px;
+    height: 580px;
     margin: auto;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .Background {
@@ -23,7 +25,16 @@ body {
     border-bottom-right-radius: 10px;
 }
 
+/* **********************left **************** */
+
+.penert-image-name {
+    /* background-color: blueviolet; */
+    width: 500px;
+}
+
 .imageProfile {
+    left: 30px;
+    top: -50px;
     width: 170px;
     height: 176px;
     background-color: white;
@@ -31,17 +42,33 @@ body {
     position: relative;
 }
 
-.image-imageProfile {
+#image-imageProfile {
     position: absolute;
     bottom: 0;
     width: 170px;
     border-radius: 50%;
 }
 
+.Pener-name {
+    background-color: #fff;
+    margin-left: 50px;
 
-.edit-Profil,
-.add-to-Story {
+}
+
+#count-fiends,
+span {
     text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-gree);
+}
+
+
+/****************** right ************************************/
+
+.edit-add {
+    width: 300px;
+    /* background-color: #fff; */
 }
 
 .perent-edit-Profil {
@@ -49,10 +76,45 @@ body {
     height: 30px;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
     background-color: var(--color-blue-light);
 }
 
-.edit-Profil {
+.perent-edit-Profil a {
+    text-decoration: none;
     color: #000;
     font-weight: 600;
+
+}
+
+.perent-edit-Profil a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.div-icon {
+    /* background-color: #fff; */
+    color: var(--color-blue);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.perent-add-to-Story {
+    background-color: var(--color-blue);
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.perent-add-to-Story a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.perent-add-to-Story a:hover {
+    color: #fff;
 }
