@@ -1,11 +1,12 @@
 
 import './App.css';
-import Home from './components/Home/home';
+// import Home from './components/Home/home';
+
 import Porfile from './components/profile/Porfile';
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
       <Porfile />
     </>
   );
