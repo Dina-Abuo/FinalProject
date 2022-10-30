@@ -1,0 +1,82 @@
+.story{
+    transition: transform 100ms ease-in-out;
+    margin-right: 30px;
+    border-radius: 15%;
+  height: 200px;
+    background-repeat: no-repeat;
+background-size: cover;
+ background-position: center center;
+background-image: url("https://images.unsplash.com/photo-1666176481173-4c0b1a86cf35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.story2{
+    transition: transform 100ms ease-in-out;
+    margin-right: 30px;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+    background-image: url("https://images.unsplash.com/photo-1666865997281-8d4af466b5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8UzRNS0xBc0JCNzR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+}
+.story3{
+    transition: transform 100ms ease-in-out;
+    margin-right: 30px;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+    background-image: url("https://images.unsplash.com/photo-1666723655505-419fd684c451?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8SnBnNktpZGwtSGt8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+}
+
+.story4{
+    transition: transform 100ms ease-in-out;
+    margin-right: 30px;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+    background-image: url("https://images.unsplash.com/photo-1666551186064-2a660d697444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.story5{
+    transition: transform 100ms ease-in-out;
+    margin-right: 30px;
+    border-radius: 15%;
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+    background-image: url("https://images.unsplash.com/photo-1666845524565-11c4f0f99f22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8RnpvM3p1T0hONnd8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60")
+}
+.story:hover{
+    transform: scale(1.07);
+
+}
+.story2:hover{
+    transform: scale(1.07);
+
+}
+.story3:hover{
+    transform: scale(1.07);
+
+}
+.story4:hover{
+    transform: scale(1.07);
+
+}
+.story5:hover{
+    transform: scale(1.07);
+
+}
+.storytitle{
+    color: aliceblue;
+    position: absolute;
+    bottom: 20px;
+
+}
+.pavatar{
+    border: 3px solid rgb(211, 184, 115);
+}

@@ -1,7 +1,10 @@
 import React from 'react'
 import './BodyHome.css'
+import Stories from './storiess/stories'
 export default function BodyHome() {
     return (
+        <>
+        <Stories/>
         <div className="messageSender">
             <div className="messageSender__top">
                 {/* <Avatar /> */}
@@ -40,5 +43,6 @@ export default function BodyHome() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
