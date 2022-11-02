@@ -3,10 +3,17 @@ import './photo.css'
 export default function Photos() {
     return (
         <>
-        <div className='content1'>
-            
-                <h1>PHOTOS</h1>
-        </div>
+            <div className='container'>
+                <div className='row'>
+                    <div className='ms-auto me-auto  col-8'>
+                        <div className='row '>
+                            <div className='col-4 bb'>
+                                dina
+                            </div>
+                            <div className='col-8 dd' > Abouelsoud </div>
+                        </div></div>
+                </div>
+            </div>
         </>
     )
 

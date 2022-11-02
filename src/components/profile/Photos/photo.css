@@ -3,6 +3,12 @@ body {
     background-color: var(--body-color);
 }
 
-.content1{
- background-color: var(--body-color)
+.bb {
+    background-color: aqua;
+    height: 400px;
+}
+
+.dd {
+    background-color: bisque;
+    height: 400px;
 }
