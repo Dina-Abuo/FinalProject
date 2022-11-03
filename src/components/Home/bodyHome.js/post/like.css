@@ -1,0 +1,28 @@
+.parentDiv{
+    margin-top: -90px;
+}
+  .reactionsHolder {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 3px 3px 30px rgba(0, 10, 10, 0.2);
+    padding: 15px;
+    border-radius: 60px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  
+  .reactionsHolder > img {
+    margin-right: 8px;
+  }
+  
+  .likeBtn {
+    padding: 10px;
+    margin-top: 0px;
+    width: 150px;
+    height: 60px;
+    background: white;
+    box-shadow: 3px 3px 30px rgba(0, 10, 10, 0.2);
+    border: none;
+    border-radius: 50px;
+  }

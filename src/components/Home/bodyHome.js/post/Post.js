@@ -1,12 +1,8 @@
-
+import FBReactions from './Like'
 // import { Avatar } from '@material-ui/core'
 import React from 'react'
 import './Post.css'
-// import ThumbUpIcon from '@material-ui/icons/ThumbUp'
-// import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline'
-// import NearMeIcon from '@material-ui/icons/NearMe'
-// import { ExpandMoreOutlined } from '@material-ui/icons'
-// import AccountCircleIcon from '@material-ui/icons/AccountCircle'
+
 
 
 function Post({ profilePic, image, username, timestamp, message}) {
@@ -35,26 +31,16 @@ function Post({ profilePic, image, username, timestamp, message}) {
                         />
                     </div>
                     <div className = "post__options">
-                        <div className = "post__option">
-                            {/* <ThumbUpIcon /> */}
-                            <i class="far fa-thumbs-up i"></i>
-                            <p>Like</p>
-                        </div>
+                        <FBReactions />
                         <div className = "post__option">
                             <i class="far fa-comment i"></i>
-                            {/* <ChatBubbleOutlineIcon /> */}
                             <p>Comment</p>
                         </div>
                         <div className = "post__option">
-                            {/* <NearMeIcon /> */}
                             <i class="fas fa-share-square i"></i>
                             <p>Share</p>
                         </div>
-                        <div className = "post__option">
-                            {/* <AccountCircleIcon />
-                            <ExpandMoreOutlined /> */}
-                        </div>
-                        </div>
+                    </div>
 
         </div>
                 
