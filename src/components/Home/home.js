@@ -11,7 +11,7 @@ export default function Home() {
 
             <div className="container">
                 <Header />
-                <div >
+                <div className="container grid">
                     <Sidebar/>
                     <BodyHome />
                     <SideBarRight />

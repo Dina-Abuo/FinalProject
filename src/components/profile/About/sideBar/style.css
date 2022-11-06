@@ -1,0 +1,28 @@
+* {
+    --color-blue: #3989f4;
+    --color-gree-drak: #77797c;
+    --color-light-gree: #f2f2f2;
+    --color-light-blue: #e7f3ff;
+    box-sizing: border-box;
+}
+
+.link-sidebar-about {
+    color: var(--color-gree-drak);
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.link-sidebar-about:hover {
+    color: var(--color-gree-drak);
+    background-color: var(--color-light-gree);
+}
+
+.link-sidebar-about:focus {
+    color: var(--color-blue);
+    background-color: var(--color-light-blue);
+}

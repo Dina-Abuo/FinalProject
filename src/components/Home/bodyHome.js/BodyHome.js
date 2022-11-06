@@ -1,9 +1,12 @@
 import React from 'react'
+<<<<<<< HEAD
 import './BodyHome.css'
 import Stories from './storiess/stories'
+
 export default function BodyHome() {
     return (
         <>
+
         <Stories/>
         <div className="messageSender">
             <div className="messageSender__top">
@@ -42,6 +45,21 @@ export default function BodyHome() {
                     <h3>Feeling/Activity</h3>
                 </div>
             </div>
+=======
+import Massanger from './post/Massanger'
+import Post from './post/Post'
+export default function BodyHome() {
+    return (
+        <div className = "">
+            <Massanger />
+            <Post 
+                profilePic =" http://sites.duke.edu/wcwp/files/2020/02/Picture1.png"
+                message = "  انا الملك المصري"
+                timestamp = "time..."
+                username = "mo Salah"
+                image = "http://sites.duke.edu/wcwp/files/2020/02/Picture1.png" 
+            />
+>>>>>>> 6188e7c9cf09af9b9ba33ad0e86a72be5787ed2c
         </div>
         </>
     )
