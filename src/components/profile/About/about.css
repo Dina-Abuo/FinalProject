@@ -1,7 +1,37 @@
 body {
     --body-color: #f0f2f5;
-    background-color: var(--body-color);
+    background-color: var(--body-color)!important;}
+
+
+.back-white{
+    background-color: white;
+    
 }
+.linkAbout {
+ color: #000;
+ font-size: 32px;
+ font-weight: 600;
+ text-decoration: none;
+ padding: 10px;
+}
+.linkAbout:hover{
+    color: #000;
+    text-decoration:underline;
+}
+
+/***************************************************************************************************/
+@media screen and (max-width:992px) {
+
+    .div-about {
+        margin: 0 !important;
+    }
+
+}
+
+
+
+
+
 
 
 
@@ -14,8 +44,3 @@ body {
     background-color: bisque;
     height: 400px;
 }
-
-
-
-
-

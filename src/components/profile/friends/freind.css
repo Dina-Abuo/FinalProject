@@ -1,15 +1,75 @@
 body {
     --body-color: #f0f2f5;
-    background-color: var(--body-color);
-}
-.bb {
-    background-color: aqua;
-    height: 400px;
+    --color-blue: #1876f2;
+    --color-gree: #65676b;
+
 }
 
-.dd {
-    background-color: bisque;
-    height: 400px;
+body {
+    --body-color: #f0f2f5;
+    background-color: var(--body-color);
+}
+
+.contentFriend {
+    background-color: white;
+}
+
+.headFriend a,
+.singlFriends a {
+    color: #000;
+    text-decoration: none;
+}
+
+.headFriend a:hover,
+.singlFriends a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.button1,
+.button2,
+.button3 {
+    background-color: white;
+    border: none;
+    line-height: 1.3333;
+    color: var(--color-gree);
+    height: 50px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    border-radius: 10px;
+    background-color: var(--body-color);
+}
+
+.button1:focus,
+.button2:focus,
+.button3:focus {
+    color: var(--color-blue);
+    background-color: white;
+    border-radius: 0;
+    border-bottom: 4px solid var(--color-blue);
+}
+
+.singlFriends {
+
+    width: 410px;
+    height: 80px;
+
+}
+
+.singlFriends img {
+
+    height: 58px;
+}
+
+
+.W45{
+    width: 45%;
 }
 
 

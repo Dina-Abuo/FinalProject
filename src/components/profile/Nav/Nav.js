@@ -9,17 +9,17 @@ export default function Nav() {
     // }
 
     return (
-        <>
+        <><div className='content'>
             <div className='container'>
-                <div className='content'>
-                    <div className='div-nav'>
+                <div className='row'>
+                    <div className='div-nav col-lg-9 col-12 '>
                         <nav className="navbar navbar-expand-lg ">
                             <ul className="navbar-nav">
                                 <li className="nav-item d-flex align-items-center">
                                     <Link className="navLink" aria-current="page" to="/"> Posts </Link>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link NavLink className="navLink" to="/about"> About </Link >
+                                    <Link className="navLink" to="/about"> About </Link >
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
                                     <Link className="navLink " to="/friends" > Friends </Link>
@@ -29,9 +29,6 @@ export default function Nav() {
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
                                     <Link className="navLink  hidden-xs" to="/vidoes" > Videos </Link>
-                                </li>
-                                <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink hidden-xs" to="/check" > Ckeck-ins </Link>
                                 </li>
                                 <li>
                                     <NavDropdown title="More" id="basic-nav-dropdown" className='mt-1'>
@@ -53,6 +50,7 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }
