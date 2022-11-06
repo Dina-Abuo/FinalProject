@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
 // import { useStateValue } from './StateProvider'
-
-
+import PhotoProfile from './photoProfile'
+import { Link } from "react-router-dom";
 function Header({profilePic}) {
     // const [{ user }, dispatch] = useStateValue();
     return (
@@ -19,13 +19,14 @@ function Header({profilePic}) {
             </div>
             <div className = "header__middle">
                 <div className = "header__options header__options--active">
-                <i className="fa-solid fa-house fa-2x"></i>
+                <Link to="/"><i className="fa-solid fa-house fa-2x"></i></Link>
                 </div>
                 <div className = "header__options">
-                <i className="fa-solid fa-users fa-2x"></i>
+                <Link to="/fkdfkj"><i className="fa-solid fa-users fa-2x"></i></Link>
                 </div>
                 <div className = "header__options">
-                <i className="fa-solid fa-tv fa-2x"></i>
+                <Link to="/fkdfkj"><i className="fa-solid fa-tv fa-2x"></i></Link>
+                
                 </div>
                 {/* <div className = "header__options">
                     <StorefrontOutlinedIcon fontSize = "large" />
@@ -37,9 +38,7 @@ function Header({profilePic}) {
             <div className = "header__info ">
             <i className="fa-solid fa-list fa-2x  header__options"></i>
             <i className="fa-solid fa-bell fa-2x  header__options"></i>
-            <div className ="header__right" >
-                <img src = "https://e7.pngegg.com/pngimages/58/564/png-clipart-user-profile-computer-icons-avatar-avatar-white-face-thumbnail.png" className = "header__info1"/>
-            </div>
+            <Link  to="/photoPorfile"><PhotoProfile /></Link>   
             </div>
         </div>
     )
