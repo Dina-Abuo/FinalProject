@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav.css'
 export default function Nav() {
@@ -16,19 +16,19 @@ export default function Nav() {
                         <nav className="navbar navbar-expand-lg ">
                             <ul className="navbar-nav">
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink" aria-current="page" to="/"> Posts </Link>
+                                    <a className="navLink" aria-current="page" href=" # "> Posts </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink" to="/about"> About </Link >
+                                    <a className="navLink" href="/about"> About </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink " to="/friends" > Friends </Link>
+                                    <a className="navLink " href="/friends" > Friends </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink  hidden-xs" to="/photos" > photos </Link>
+                                    <a className="navLink  hidden-xs" href="/photos" > photos </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <Link className="navLink  hidden-xs" to="/vidoes" > Videos </Link>
+                                    <a className="navLink  hidden-xs" href="/vidoes" > Videos </a>
                                 </li>
                                 <li>
                                     <NavDropdown title="More" id="basic-nav-dropdown" className='mt-1'>
@@ -55,6 +55,22 @@ export default function Nav() {
     )
 }
 
+
+//   <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink" aria-current="page" to="/"> Posts </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink" to="/about"> About </Link >
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink " to="/friends" > Friends </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink  hidden-xs" to="/photos" > photos </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink  hidden-xs" to="/vidoes" > Videos </Link>
+//                                 </li>
 
 /* 
             <div className='div-nav '>
