@@ -1,8 +1,7 @@
 .story{
     transition: transform 100ms ease-in-out;
-    margin-right: 30px;
     border-radius: 15%;
-  height: 200px;
+    height:200px ;
     background-repeat: no-repeat;
 background-size: cover;
  background-position: center center;
@@ -11,7 +10,6 @@ background-image: url("https://images.unsplash.com/photo-1666176481173-4c0b1a86c
 
 .story2{
     transition: transform 100ms ease-in-out;
-    margin-right: 30px;
     border-radius: 15%;
     background-repeat: no-repeat;
 background-size: cover;
@@ -21,7 +19,6 @@ background-position: center center;
 }
 .story3{
     transition: transform 100ms ease-in-out;
-    margin-right: 30px;
     border-radius: 15%;
     background-repeat: no-repeat;
 background-size: cover;
@@ -32,7 +29,6 @@ background-position: center center;
 
 .story4{
     transition: transform 100ms ease-in-out;
-    margin-right: 30px;
     border-radius: 15%;
     background-repeat: no-repeat;
 background-size: cover;
@@ -43,7 +39,6 @@ background-position: center center;
 
 .story5{
     transition: transform 100ms ease-in-out;
-    margin-right: 30px;
     border-radius: 15%;
     background-repeat: no-repeat;
 background-size: cover;

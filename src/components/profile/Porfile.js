@@ -1,27 +1,23 @@
 import React from 'react'
-import HeadProfile from './head/HeadProfile';
 import Nav from './Nav/Nav';
-import Posts from './posts/posts'
-import Abouts from './About/Abouts';
-import Friends from './friends/Friends';
-import Photos from './Photos/Photos';
-import Vidoes from './Vidoes/vidoes';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import Posts from '../profile/posts/posts';
+import Abouts from'../profile/About/Abouts'
+import Friends from '../profile/friends/Friends'
+import Photos from '../profile/Photos/Photos'
+import Vidoes from'../profile/Vidoes/vidoes'
+import HeadProfile from './head/HeadProfile';
 export default function Porfile() {
     return (
         <>
-            <Router>
+    
                 <HeadProfile />
-                <Nav />
-                <Routes>
-                    <Route exact path='/' element={<Posts />} />
-                    <Route path='/about' element={<Abouts />} />
-                    <Route path='/friends' element={<Friends />} />
-                    <Route path='/photos' element={<Photos />} />
-                    <Route path='/vidoes' element={<Vidoes />} />
-                </Routes>
-            </Router>
+                  <Nav />
+                    <Posts /> 
+                   <Abouts /> 
+                  <Friends />
+                   <Photos />
+                  <Vidoes />
+             
 
 
         </>
