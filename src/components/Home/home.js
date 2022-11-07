@@ -1,27 +1,23 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Sidebar from './siderbar/Sidebar';
-import BodyHome from './bodyHome.js/BodyHome';
-import SideBarRight from './sideBarRight/SideBarRight';
-import './home.css'
-import  Group  from '../Groups/groups';
-import { Routes, Route} from "react-router-dom";
-import Profile from '../profile/Porfile'
+import './home.css';
+import Siderbar from './siderbar/Sidebar'
+import SideBarRight from './sideBarRight/SideBarRight'
+import BodyHome from './bodyHome/BodyHome'
 export default function Home() {
     return (
-            <div className="container">
-                <Header />
-                <Routes>
-                 <Route path="/" element={
-                 <div className="container grid">
-                    <Sidebar/>
-                    <BodyHome />
-                    <SideBarRight />
+        <>
+
+            <div className='row '>
+                <div className="col-lg-3 non" >
+                    <Siderbar />
                 </div>
-                }/>            
-                <Route path='/group' element={<Group/>  }/>
-                 <Route path="/profile" element={<Profile />}/>
-                </Routes>
+                <div className="col-11  col-lg-5  ms-5" >
+                    <BodyHome />
+                </div>
+                <div className='col-lg-3 non'> <SideBarRight /> </div>
             </div>
+
+
+        </>
     )
-            }
+}
