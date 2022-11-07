@@ -20,8 +20,8 @@ export default function Home() {
                 </div>
                 }/>            
                 <Route path='/group' element={<Group/>  }/>
-                 <Route path="photoPorfile" element={<Profile />}/>
+                 <Route path="/profile" element={<Profile />}/>
                 </Routes>
             </div>
     )
-}
+            }

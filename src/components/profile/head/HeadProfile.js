@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './styleHead.css';
@@ -20,12 +20,13 @@ export default function HeadProfile() {
                                 <div className='row'>
                                     <div className='contentImageProfile col-12 col-lg-3  '>
                                         <div className='imageProfile ms-5 me-4'   >  <a href=' # ' >
-                                            <img id='image-imageProfile' className='img-fluid rounded-circle position-absolute bottom-0' src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0" />
+                                            <img id='image-imageProfile' className='img-fluid rounded-circle position-absolute bottom-0'
+                                                src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0" />
                                         </a></div>
                                     </div>
                                     <div className='name-profile-count-fiends col-12 col-lg-5 mt-lg-5 ' >
                                         <h4 id='name-profile'> Dina Abouelsoud  </h4>
-                                        <Link href=' # ' id="count-fiends">   <span> 1 </span>  friends </Link>
+                                        <a href=' # ' id="count-fiends">   <span> 1 </span>  friends </a>
                                     </div>
 
                                     <div className='edit-add  d-flex align-items-end   col-12 col-lg-4   mt-4  mt-lg- 0  '>
@@ -76,9 +77,7 @@ export default function HeadProfile() {
                                                 <Modal.Body >
                                                     <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Hobbies</h4> <button type='button'>Add</button>  </div>
                                                 </Modal.Body>
-
                                                 <Modal.Footer>
-
                                                     <button className='button-handle rounded ' onClick={handleClose}>
                                                         Edit your About info
                                                     </button>

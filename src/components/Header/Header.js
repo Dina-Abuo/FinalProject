@@ -37,7 +37,7 @@ function Header({profilePic}) {
                     <i className="fa-solid fa-list fa-2x  fs-4 header__options"></i>
                     <i className="fa-solid fa-bell fa-2x fs-4  header__options"></i>
 
-                    <Link  to="/photoPorfile" className='mt-2'><PhotoProfile /></Link>   
+                    <Link  to="/profile" className='mt-2'><PhotoProfile /></Link>   
 
                 </div>
             </div>

@@ -1,18 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './view.css'
-
-
-
+// import { addDoc, collection, getFirestore } from 'firebase/firestore';
+// import Confgi from '../../../../firestore';
 export default function Overview() {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const firestore = getFirestore(Confgi);
+  // function saveWorkplse() {
+  //   var company = document.getElementById("Company").value;
+  //   var position = document.getElementById("Position").value;
+  //   var city = document.getElementById("City").value;
+  // }
+  // var data = {
+  //   Company: company,
+  //   Position: position,
+  //   City: city,
+  // }
+  // var addWorkplse = addDoc(collection(firestore, 'Workplse'), data);
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
   return (
     <>
       <div className=' d-flex p-3'>
         <div className='iconPlus d-flex me-2 '><i class="fa-solid fa-plus "></i></div>
-        <button className=' btun-Show' onClick={handleClose}>Add Workplse  </button>
+        <button className=' btun-Show' >Add Workplse  </button>
       </div>
       <form className='mt-3'>
         <div class="mb-3">
@@ -25,7 +36,7 @@ export default function Overview() {
           <input type="text" class="form-control p-3" id="City" placeholder='City/Town' />
         </div>
         <div class="pb-5 mb-3 form-check border-bottom ">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <input type="checkbox" class="form-check-input" id="Check1" />
           <label class="form-check-label" for="exampleCheck1">I currently work here</label>
         </div>
         <div className='d-flex justify-content-between'>
@@ -33,8 +44,8 @@ export default function Overview() {
             <button class="btn btn-secondary">Piblic</button>
           </div>
           <div>
-            <button class="btn btn-secondary  me-2">cancel</button>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button class="btn btn-secondary  me-2"> cancel </button>
+            <button type="submit" class="btn btn-primary"  >Save</button>
           </div>
         </div>
       </form>
@@ -43,7 +54,7 @@ export default function Overview() {
 
       <div className=' d-flex p-3'>
         <div className='iconPlus d-flex me-2 '><i class="fa-solid fa-plus "></i></div>
-        <button className=' btun-Show' onClick={handleClose}>Add high school </button>
+        <button className='btun-Show' >Add high school </button>
       </div>
       <form className='mt-3'>
         <div class="mb-3">
@@ -69,7 +80,7 @@ export default function Overview() {
 
       <div className=' d-flex p-3'>
         <div className='iconPlus d-flex me-2 '><i class="fa-solid fa-plus "></i></div>
-        <button className=' btun-Show' onClick={handleClose}>Add college  </button>
+        <button className=' btun-Show'>Add college  </button>
       </div>
       <form className='mt-3'>
         <div class="mb-3">
@@ -104,4 +115,9 @@ export default function Overview() {
       </form>
     </>
   )
+
+
+
+
+
 }

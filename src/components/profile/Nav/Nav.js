@@ -1,4 +1,6 @@
 import React from 'react'
+// import { Link } from "react-router-dom";
+
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav.css'
 export default function Nav() {
@@ -19,6 +21,11 @@ export default function Nav() {
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
                                     <a className="navLink"  href="/about"> About </a >
+                                    <a className="navLink" aria-current="page" href=" # "> Posts </a>
+                                </li>
+                                <li className="nav-item d-flex align-items-center">
+                                    <a className="navLink" href="/about"> About </a>
+
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
                                     <a className="navLink " href="/friends" > Friends </a>
@@ -27,7 +34,10 @@ export default function Nav() {
                                     <a className="navLink  hidden-xs" href="/photos" > photos </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
+
                                     <a className="navLink  hidden-xs"  href="/vidoes" > Videos </a>
+                                    <a className="navLink  hidden-xs" href="/vidoes" > Videos </a>
+
                                 </li>
                                 <li>
                                     <NavDropdown title="More" id="basic-nav-dropdown" className='mt-1'>
@@ -54,6 +64,22 @@ export default function Nav() {
     )
 }
 
+
+//   <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink" aria-current="page" to="/"> Posts </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink" to="/about"> About </Link >
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink " to="/friends" > Friends </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink  hidden-xs" to="/photos" > photos </Link>
+//                                 </li>
+//                                 <li className="nav-item d-flex align-items-center">
+//                                     <Link className="navLink  hidden-xs" to="/vidoes" > Videos </Link>
+//                                 </li>
 
 /* 
             <div className='div-nav '>
