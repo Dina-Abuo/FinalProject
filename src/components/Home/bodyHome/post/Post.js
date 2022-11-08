@@ -1,37 +1,45 @@
-import FBReactions from './Like'
-// import { Avatar } from '@material-ui/core'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Post.css'
 
 
 
 function Post({ profilePic, image, username, timestamp, message}) {
-    return (
-        <div className = "post">
+    const [proudct,setProudct]=useState([])
+    useEffect(()=>{
+      fetch('https://jsonplaceholder.typicode.com/photos')
+            .then(res=>res.json())
+            .then(json=>setProudct(json))
+    },[])
+    const PostApi= proudct.map((event)=>{
+        return(
+            <div className='post' key={event.id}>
+                {/* <img src={event.image} alt="" />
+                <h1>{event.title}</h1>
+                <h2>{event.price}</h2>
+                <button onClick={()=>{alert(`this ${event.price}`)}}>buy</button> */}
             <div className = "post__top">
-            <img src={profilePic} 
+            <img src={event.url} 
             class="post__avatar"
              alt="Avatar" 
              />
-                {/* <Avatar
-                    src = {profilePic}
-                    className = ""
-                /> */}
                 <div className = "post__topInfo">
                     <h3>{username}</h3>
                     <p>9.45</p>
                 </div>
             </div>
                 <div className = "post__bottom">
-                    <p>{message}</p>
+                    <p>{event.title}</p>
                 </div>
                     <div className = "post__image">
-                        <img src = {image} 
+                        <img src = {event.url} 
                             alt = ""
                         />
                     </div>
                     <div className = "post__options">
-                        <FBReactions />
+                        <div className = "post__option"> 
+                        <i class="fa fa-thumbs-up i" ></i>
+                        <p>Like</p>
+                        </div>
                         <div className = "post__option">
                             <i class="far fa-comment i"></i>
                             <p>Comment</p>
@@ -41,7 +49,12 @@ function Post({ profilePic, image, username, timestamp, message}) {
                             <p>Share</p>
                         </div>
                     </div>
-
+            </div>
+        )
+    })
+    return (
+        <div className = "">
+           {PostApi}
         </div>
                 
     )

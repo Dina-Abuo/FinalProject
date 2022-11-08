@@ -1,94 +1,22 @@
+import React from 'react'
 import './Massanger.css'
-import React, { useContext, useRef, useState } from "react";
-import { db, storage } from "../../firebase";
-import { AuthContext } from "../../contexts/auth";
-import firebase from "firebase/compat/app";
 
 function Massanger() {
-    const { user } = useContext(AuthContext);
-    const [desc, setDesc] = useState("");
-    const fileRef = useRef(null);
-    const [filePost, setFilePost] = useState("");
-  
-    const handlePost = async (e) => {
-      e.preventDefault();
-  
-      console.log(123);
-  
-      if (!desc) return;
-  
-      await db
-        .collection("posts")
-        .add({
-          desc: desc,
-          name: user.name,
-          email: user.email,
-          image: user.avatarUrl,
-          timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        })
-        .then((doc) => {
-          if (filePost) {
-            const upload = storage
-              .ref(`posts/${doc.id}`)
-              .putString(filePost, "data_url");
-  
-            removeFile();
-  
-            upload.on(
-              "state_change",
-              null,
-              (err) => console.log(err),
-              () => {
-                storage
-                  .ref(`posts`)
-                  .child(doc.id)
-                  .getDownloadURL()
-                  .then((url) => {
-                    db.collection("posts").doc(doc.id).set(
-                      {
-                        filePost: url,
-                      },
-                      { merge: true }
-                    );
-                  });
-              }
-            );
-          }
-        });
-  
-      setDesc("");
-    };
-  
-    const handleImage = (e) => {
-      const reader = new FileReader();
-  
-      if (e.target.files[0]) {
-        reader.readAsDataURL(e.target.files[0]);
-      }
-  
-      reader.onload = (readerEvent) => {
-        setFilePost(readerEvent.target.result);
-      };
-    };
-  
-    const removeFile = () => setFilePost(null);
-  
+
   return (
     <div className = "messageSender">
     <div className = "messageSender__top">
-          <img src={user.avatarUrl}
+          <img src="http://sites.duke.edu/wcwp/files/2020/02/Picture1.png"
             class="post__avatar"
              alt="Avatar" 
              />
         <form>
             <input 
-                value={desc}
-                placeholder={`No que você está pensando, ${
-                  user.name.split(" ")[0]
-                }?`}
-                onChange={(e) => setDesc(e.target.value)}
+                className = "messageSender__input"
+                placeholder = {`What's on your mind,  ?`}
             />
-            <button  type="submit" onClick={handlePost} hidden>Hidden Submit</button>
+
+            <button  type = "submit">Hidden Submit</button>
         </form>
     </div>
     <div className = "messageSender__bottom">
