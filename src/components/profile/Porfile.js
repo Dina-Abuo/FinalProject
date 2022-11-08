@@ -1,6 +1,6 @@
-import React from 'react'
-import HeadProfile from './head/HeadProfile';
-import Nav from './Nav/Nav';
+import React from 'react';
+import HeadProfile from './head/HeadProfile'
+import Nav  from './Nav/Nav'
 import Posts from './posts/posts'
 import Abouts from './About/Abouts';
 import Friends from './friends/Friends';
@@ -16,6 +16,7 @@ export default function Porfile() {
             <Friends />
             <Photos />
             <Vidoes />
+
         </>
     )
 }
