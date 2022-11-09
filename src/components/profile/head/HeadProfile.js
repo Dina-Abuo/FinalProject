@@ -54,7 +54,7 @@ export default function HeadProfile() {
 
                                                 </Modal.Body>
                                                 <Modal.Body className='border-bottom'>
-                                                    <Background/>
+                                                    <Background />
                                                 </Modal.Body>
                                                 <Modal.Body >
                                                     <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Bio</h4> <button type='button'>Add</button>  </div>
