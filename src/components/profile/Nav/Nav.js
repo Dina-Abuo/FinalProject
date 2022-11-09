@@ -1,13 +1,8 @@
 import React from 'react'
-// import { Link } from "react-router-dom";
-
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav.css'
 export default function Nav() {
 
-    // const changeColor = () => {
-    //     document.getElementsByClassName("nav-link").style.color = "#1876f2;";
-    // }
 
     return (
         <><div className='content'>
@@ -16,15 +11,11 @@ export default function Nav() {
                     <div className='div-nav col-lg-9 col-12 '>
                         <nav className="navbar navbar-expand-lg ">
                             <ul className="navbar-nav">
+
                                 <li className="nav-item d-flex align-items-center">
-                                    <a className="navLink" aria-current="page"  href="/"> Posts </a>
+                                    <a className="navLink" aria-current="page" href=" # " > Posts </a>
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
-                                    <a className="navLink"  href="/about"> About </a >
-                                    <a className="navLink" aria-current="page" href=" # "> Posts </a>
-                                </li>
-                                <li className="nav-item d-flex align-items-center">
-                                    <a className="navLink" href="/about"> About </a>
 
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
@@ -35,7 +26,6 @@ export default function Nav() {
                                 </li>
                                 <li className="nav-item d-flex align-items-center">
 
-                                    <a className="navLink  hidden-xs"  href="/vidoes" > Videos </a>
                                     <a className="navLink  hidden-xs" href="/vidoes" > Videos </a>
 
                                 </li>

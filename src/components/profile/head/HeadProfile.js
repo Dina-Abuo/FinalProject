@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './styleHead.css';
+import ImageProfile from './imageProfile/ImageProfile'
 export default function HeadProfile() {
     const [show, setShow] = useState(false);
 
@@ -47,14 +48,9 @@ export default function HeadProfile() {
                                                     <Modal.Title className='text'>Edit profile</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body className='border-bottom'>
-                                                    <div >
-                                                        <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Profile picture</h4> <button type='button'>Add</button>  </div>
-                                                        <div className='contentImageProfile d-flex justify-content-center align-items-center     '>
-                                                            <div className='imageProfile   top-0 '   >  <a href=' # ' >
-                                                                <img id='image-imageProfile' className='img-fluid rounded-circle  border position-absolute bottom-0' src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0" />
-                                                            </a></div>
-                                                        </div>
-                                                    </div >
+
+                                                    <ImageProfile />
+
                                                 </Modal.Body>
                                                 <Modal.Body className='border-bottom'>
                                                     <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Cover Photo</h4> <button type='button'>Add</button>  </div>
