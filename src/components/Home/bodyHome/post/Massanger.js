@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Massanger.css'
+import { useStateValue } from './StateProvider'
+import firestore from '../../../../firestore'
+import firebase from 'firebase'
 
 function Massanger() {
+  const [{ user }, dispatch] = useStateValue();
+  const [input, setInput] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
+  const handleSubmit = (e) => {
+      e.preventDefault();
+
+      firestore.collection('posts').add({
+          message: input,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+          profilePic: user.photoURL,
+          username: user.displayName,
+          image: imageUrl
+      })
+
+      setInput('')
+      setImageUrl('')
+  } 
 
   return (
     <div className = "messageSender">
@@ -16,7 +36,7 @@ function Massanger() {
                 placeholder = {`What's on your mind,  ?`}
             />
 
-            <button  type = "submit">Hidden Submit</button>
+            <button  onClick = {handleSubmit} type = "submit">Hidden Submit</button>
         </form>
     </div>
     <div className = "messageSender__bottom">
@@ -45,4 +65,4 @@ function Massanger() {
   )
 }
 
-export default Massanger
+export default Massanger;
