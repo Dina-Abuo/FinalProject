@@ -102,12 +102,12 @@ span {
     color: var(--color-blue);
 }
 
+
 .cover-phto {
     background-color: #ccc;
     width: 70%;
     height: 150px;
-    margin: auto;
-
+    margin-left: 15%;
 }
 
 ul li {
