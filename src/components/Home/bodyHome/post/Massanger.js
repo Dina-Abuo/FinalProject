@@ -1,27 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Massanger.css'
-import { useStateValue } from './StateProvider'
-import firestore from '../../../../data/firebase'
-import firebase from 'firebase'
+// import { useStateValue } from './StateProvider'
+// import {firstore} from '../../../../data/firebase'
+// import {FieldValue,collection} from 'firebase/firestore'
 
 function Massanger() {
-  const [{ user }, dispatch] = useStateValue();
-  const [input, setInput] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
-  const handleSubmit = (e) => {
-      e.preventDefault();
+  // const [{ user }, dispatch] = useStateValue();
+  // const [input, setInput] = useState('');
+  // const [imageUrl, setImageUrl] = useState('');
+  // const handleSubmit = (e) => {
+  //     e.preventDefault();
 
-      firestore.collection('posts').add({
-          message: input,
-          timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-          profilePic: user.photoURL,
-          username: user.displayName,
-          image: imageUrl
-      })
+  //     collection('posts').add({
+  //         message: input,
+  //         timestamp: FieldValue.serverTimestamp(),
+  //         profilePic: user.photoURL,
+  //         username: user.displayName,
+  //         image: imageUrl
+  //     })
 
-      setInput('')
-      setImageUrl('')
-  } 
+  //     setInput('')
+  //     setImageUrl('')
+  // } 
 
   return (
     <div className = "messageSender">
@@ -35,8 +35,9 @@ function Massanger() {
                 className = "messageSender__input"
                 placeholder = {`What's on your mind,  ?`}
             />
+            {/* onClick = {handleSubmit} */}
 
-            <button  onClick = {handleSubmit} type = "submit">Hidden Submit</button>
+            <button   type = "submit">Hidden Submit</button>
         </form>
     </div>
     <div className = "messageSender__bottom">

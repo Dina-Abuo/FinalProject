@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import './Post.css'
-
+import React,{useEffect,useState} from 'react'
 function Post({ profilePic, image, username, timestamp, message}) {
     const [proudct,setProudct]=useState([])
     useEffect(()=>{
@@ -8,15 +7,11 @@ function Post({ profilePic, image, username, timestamp, message}) {
             .then(res=>res.json())
             .then(json=>setProudct(json))
     },[])
-    const PostApi= proudct.map((event)=>{
+    const postApil= proudct.map((event)=>{
         return(
-            <div className='post' key={event.id}>
-                {/* <img src={event.image} alt="" />
-                <h1>{event.title}</h1>
-                <h2>{event.price}</h2>
-                <button onClick={()=>{alert(`this ${event.price}`)}}>buy</button> */}
-            <div className = "post__top">
-            <img src={event.url} 
+            <div className = "" key={event.id}>
+        <div className = "post__top">
+            <img src={profilePic} 
             class="post__avatar"
              alt="Avatar" 
              />
@@ -48,14 +43,14 @@ function Post({ profilePic, image, username, timestamp, message}) {
                         </div>
                     </div>
             </div>
+              
         )
     })
     return (
         <div className = "">
-           {PostApi}
-        </div>
-
+        {postApil}
+            </div>
+              
     )
 }
-
 export default Post;

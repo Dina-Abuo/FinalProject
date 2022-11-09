@@ -3,7 +3,7 @@ export default function SideBarRight() {
     return (
         <>
 
-            <div>
+            <div className=''>
                 {/* Notifaction By Sanabl  */}
                 <h1> Sanabl </h1>
                 {/* Friends  By Dina  */}

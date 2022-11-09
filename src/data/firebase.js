@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
     apiKey: "AIzaSyCpT5JM_LqCLJDRS0yxAD8hSXq545FQLr0",
     authDomain: "facebook-final-project123456.firebaseapp.com",
@@ -21,8 +22,6 @@ export const storage = getStorage(app);
 export const firstore = getFirestore(app);
 // Initialize authontiction 
 export const auth = getAuth(app);
-
-
 
 
 
