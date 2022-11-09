@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Post.css'
 
-
-
 function Post({ profilePic, image, username, timestamp, message}) {
     const [proudct,setProudct]=useState([])
     useEffect(()=>{
@@ -56,8 +54,8 @@ function Post({ profilePic, image, username, timestamp, message}) {
         <div className = "">
            {PostApi}
         </div>
-                
+
     )
 }
 
-export default Post
+export default Post;

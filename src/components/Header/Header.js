@@ -12,8 +12,7 @@ function Header({ profilePic }) {
                     <div className='row '>
                         <div className='header__left col-3 '>
                             <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="FB-Logo" />
+                                src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png"} alt="FB-Logo" />
                             <div className="header__input">
                                 <i className="bi bi-search"></i>
                                 <input type="text" placeholder="search facebook" className="header_input_text" />

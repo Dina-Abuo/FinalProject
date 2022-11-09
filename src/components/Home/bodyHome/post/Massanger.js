@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Massanger.css'
 import { useStateValue } from './StateProvider'
-import firestore from '../../../../firestore'
+import firestore from '../../../../data/firebase'
 import firebase from 'firebase'
 
 function Massanger() {
