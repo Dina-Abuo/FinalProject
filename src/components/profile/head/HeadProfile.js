@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './styleHead.css';
 import ImageProfile from './imageProfile/ImageProfile'
+import Background from "./background/background"
 export default function HeadProfile() {
     const [show, setShow] = useState(false);
 
@@ -53,8 +54,7 @@ export default function HeadProfile() {
 
                                                 </Modal.Body>
                                                 <Modal.Body className='border-bottom'>
-                                                    <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Cover Photo</h4> <button type='button'>Add</button>  </div>
-                                                    <div className='cover-phto rounded  mt-3 mb-2 '> <a href=' # '> </a>     </div>
+                                                    <Background/>
                                                 </Modal.Body>
                                                 <Modal.Body >
                                                     <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Bio</h4> <button type='button'>Add</button>  </div>

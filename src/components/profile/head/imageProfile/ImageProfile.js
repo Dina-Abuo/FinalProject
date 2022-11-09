@@ -39,6 +39,11 @@ export default function ImageProfile() {
                 <div className='d-flex  modle-head  justify-content-between align-items-center  '><h4>Profile picture</h4> <button type='button' onClick={uploadImage} >Add</button>  </div>
                 <div className='contentImageProfile d-flex justify-content-center align-items-center     '>
                     <label className='imageProfile   top-0 '  >
+                        <img
+                            className='img-fluid rounded-circle  border position-absolute bottom-0'
+                            src={"https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0"}
+                        />
+
                         {/* <img
                             className='img-fluid rounded-circle  border position-absolute bottom-0'
 
@@ -48,10 +53,6 @@ export default function ImageProfile() {
                     </label>
                 </div>
             </div >
-
-
-            {/* <input type="file" onChange={(e) => setImageUpLoad(e.target.files[0])} /> */}
-            {/* <button onClick={uploadImage} > Up Laod  </button> */}
             {
                 imageList.map((dina) => {
                     return <>
@@ -62,26 +63,3 @@ export default function ImageProfile() {
         </>
     )
 }
-
-
-/* const [change, setchange] = useState({
-        image: " "
-    })
-    const changeImgae = (e) => {
-        setchange.image = e.target.value;
-    } */
-
-
-// /*
-
-//             <label className='label__image' style={{ width: '90px' }}>
-
-//             <img className='img-fluid rounded-circle '
-//                 src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0" />
-//             <input type='file' className='input__image' onChange={(e) => changeImgae(e)} />
-
-//         </label>
-//         * /
-
-// import { storage } from "../../../../data/firebase";
-// import { ref, uploadBytes } from '../../../../data/firebase/storage';
