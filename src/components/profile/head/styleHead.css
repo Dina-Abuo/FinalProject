@@ -1,7 +1,7 @@
 * {
     --color-blue: #1876f2;
     --color-blue-light: #e4e6eb;
-    --color-gree: #65676b;
+    --color-greee: #65676b;
 
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ span {
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
-    color: var(--color-gree);
+    color: var(--color-greee);
 }
 
 /****************************************************/

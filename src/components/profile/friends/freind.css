@@ -1,7 +1,7 @@
 body {
     --body-color: #f0f2f5;
     --color-blue: #1876f2;
-    --color-gree: #65676b;
+    --color-greee: #65676b;
 
 }
 
@@ -33,7 +33,7 @@ body {
     background-color: white;
     border: none;
     line-height: 1.3333;
-    color: var(--color-gree);
+    color: var(--color-greee);
     height: 50px;
     font-weight: 600;
     padding: 10px;

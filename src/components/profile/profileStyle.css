@@ -1,0 +1,30 @@
+* {
+    --color-greee: #65676b;
+}
+
+.class-Nav {
+    background-color: white;
+    border: none;
+    line-height: 1.3333;
+    color: var(--color-greee);
+    height: 50px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.perent-button {
+    background-color: white;
+    margin: auto;
+}
+
+.class-Nav:hover {
+    border-radius: 10px;
+    background-color: var(--body-color);
+}
+
+.class-Nav:focus {
+    color: var(--color-blue);
+    background-color: white;
+    border-radius: 0;
+    border-bottom: 4px solid var(--color-blue);
+}
