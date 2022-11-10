@@ -11,10 +11,10 @@ export default function BodyHome() {
             <Stories/>
             <Massanger />
             <Post 
-                profilePic =" http://sites.duke.edu/wcwp/files/2020/02/Picture1.png"
+                profilePic ="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0"
                 message = "  انا الملك المصري"
                 timestamp = "time..."
-                username = "mo Salah"
+                username = "Dina Abouelsoud"
                 image = "http://sites.duke.edu/wcwp/files/2020/02/Picture1.png" 
             />
      </div>    

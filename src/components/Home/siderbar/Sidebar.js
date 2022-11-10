@@ -4,7 +4,7 @@ function Sidebar() {
     return (
         <div className = "sidebar">
                 <div>
-                <i className="fa-solid fa-users fa-2x p-3"></i> mo Salah   
+                <i className="fa-solid fa-user fa-2x p-3"></i> Dina Abouelsoud
                 </div> 
                 <div>
                 <i className="fa-solid fa-users fa-2x p-3"></i> Freint
