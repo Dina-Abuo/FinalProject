@@ -1,17 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Massanger.css'
+// import { useStateValue } from './StateProvider'
+// import {firstore} from '../../../../data/firebase'
+// import {FieldValue,collection} from 'firebase/firestore'
 
 function Massanger() {
-    const [input, setInput] = useState('');
-    const [imageUrl, setImageUrl] = useState('');
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  // const [{ user }, dispatch] = useStateValue();
+  // const [input, setInput] = useState('');
+  // const [imageUrl, setImageUrl] = useState('');
+  // const handleSubmit = (e) => {
+  //     e.preventDefault();
 
-        //some clever db 
+  //     collection('posts').add({
+  //         message: input,
+  //         timestamp: FieldValue.serverTimestamp(),
+  //         profilePic: user.photoURL,
+  //         username: user.displayName,
+  //         image: imageUrl
+  //     })
 
-        setInput('')
-        setImageUrl('')
-    } 
+  //     setInput('')
+  //     setImageUrl('')
+  // } 
+
   return (
     <div className = "messageSender">
     <div className = "messageSender__top">
@@ -21,17 +32,12 @@ function Massanger() {
              />
         <form>
             <input 
-                value = {input}
-                onChange = { (e) => setInput(e.target.value)}
                 className = "messageSender__input"
                 placeholder = {`What's on your mind,  ?`}
             />
-            <input 
-                value = {imageUrl}
-                onChange = { (e) => setImageUrl(e.target.value)}
-                placeholder = "image URL (optional)"
-            />
-            <button  type = "submit">Hidden Submit</button>
+            {/* onClick = {handleSubmit} */}
+
+            <button   type = "submit">Hidden Submit</button>
         </form>
     </div>
     <div className = "messageSender__bottom">
@@ -60,4 +66,4 @@ function Massanger() {
   )
 }
 
-export default Massanger
+export default Massanger;

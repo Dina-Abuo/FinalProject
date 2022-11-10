@@ -15,10 +15,7 @@ export default function Porfile() {
             photos: false,
         }
     )
-
-
     const handleClik = () => {
-
     }
     return (
         <>

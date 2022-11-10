@@ -1,13 +1,15 @@
 import React from 'react'
+import "./sideBarRight.css"
 export default function SideBarRight() {
     return (
-        <>
-
-            <div>
-                {/* Notifaction By Sanabl  */}
-                <h1> Sanabl </h1>
-                {/* Friends  By Dina  */}
-                <h1>dina</h1>
+        <>  
+        {/* Notifaction By Sanabl  */}
+        {/* Friends  By Dina  */}
+            <div className='group'>
+                <h3 className='group_1'> Group conversations</h3>
+                <div className=''>
+                <h5><i class="fa fa-plus-circle i"></i> Creat New Group</h5>
+                </div>
             </div>
 
         </>

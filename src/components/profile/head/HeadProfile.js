@@ -22,8 +22,11 @@ export default function HeadProfile() {
                                 <div className='row'>
                                     <div className='contentImageProfile col-12 col-lg-3  '>
                                         <div className='imageProfile ms-5 me-4'   >  <a href=' # ' >
-                                            <img id='image-imageProfile' className='img-fluid rounded-circle position-absolute bottom-0'
-                                                src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0" />
+                                            <img
+                                                id='image-imageProfile'
+                                                className='img-fluid rounded-circle position-absolute bottom-0'
+                                                src="https://th.bing.com/th/id/R.3265bf2fc4eef657f7e07c6cc208f698?rik=xHYudfX59TQeBw&riu=http%3a%2f%2fucanr.edu%2fsb3%2fdisplay_2018%2fimages%2fdefault-user.png&ehk=lR79jc%2bgKqbB9NYy%2b6MMZFsY5PhVpMBFGqbtyZ1CZVg%3d&risl=&pid=ImgRaw&r=0"
+                                                alt="BigCo Inc. logo" />
                                         </a></div>
                                     </div>
                                     <div className='name-profile-count-fiends col-12 col-lg-5 mt-lg-5 ' >

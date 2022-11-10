@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 // import { useStateValue } from './StateProvider'
-import PhotoProfile from './photoProfile'
+import PhotoProfile from '../Header/photoProfile'
 import { Link } from "react-router-dom";
 function Header({ profilePic }) {
     // const [{ user }, dispatch] = useStateValue();
