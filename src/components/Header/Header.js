@@ -29,17 +29,26 @@ function Header({ profilePic }) {
                             </Link>
                             <Link to="/group" className='header__options'>
 
-                                <i className="fa-solid fa-tv fa-2x fs-4"></i>
+                                <i className="fa-solid fa-tv fa-2x fs-4" ></i>
                             </Link>
                         </div>
                         <div className='col-3 d-flex '>
                             <i className="fa-solid fa-list fa-2x  fs-4 header__options"></i>
-                            <i className="fa-solid fa-bell fa-2x fs-4  header__options"></i>
-                            <Link to="/profile" className='mt-2'><PhotoProfile /></Link>
+
+                            
+              <i className="fa-solid fa-bell fa-2x fs-4  header__options position-relative" type="button"> <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span></i>
+
+ 
+
+
+                            <Link to="/profile" className='mt-2 ms-4'><PhotoProfile /></Link>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
