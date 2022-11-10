@@ -11,15 +11,17 @@ function Header({ profilePic }) {
                 <div className='header col-12'>
                     <div className='row '>
                         <div className='header__left col-3 '>
+
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/100px-Facebook_f_logo_%282019%29.svg.png"} alt="FB-Logo" />
+
                             <div className="header__input">
                                 <i className="bi bi-search"></i>
                                 <input type="text" placeholder="search facebook" className="header_input_text" />
                             </div>
                         </div>
                         <div className='header-center  col-6  d-flex justify-content-center   align-items-center   '>
-                            <Link to="/" className='header__options '>
+                            <Link to="/home" className='header__options '>
 
                                 <i className="fa-solid fa-house fa-2x  fs-4 "></i>
                             </Link>
@@ -35,12 +37,12 @@ function Header({ profilePic }) {
                         <div className='col-3 d-flex '>
                             <i className="fa-solid fa-list fa-2x  fs-4 header__options"></i>
 
-                            
-              <i className="fa-solid fa-bell fa-2x fs-4  header__options position-relative" type="button"> <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-    <span class="visually-hidden">New alerts</span>
-  </span></i>
 
- 
+                            <i className="fa-solid fa-bell fa-2x fs-4  header__options position-relative" type="button"> <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span></i>
+
+
 
 
                             <Link to="/profile" className='mt-2 ms-4'><PhotoProfile /></Link>

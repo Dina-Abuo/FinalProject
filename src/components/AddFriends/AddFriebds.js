@@ -1,10 +1,12 @@
 import React from 'react'
 import './add.css'
+import Header from '../Header/Header'
 import PeopleYouMayKnow from './PeopleYouMayKnow/PeopleYouMayKnow'
 import FriendReques from './FriendRequest/FriendRequest'
 export default function AddFriebds() {
     return (
         <>
+            <Header />
             <div className='row'>
                 <div className='col-lg-3 sid  col-12 ' >
                     <div className='d-flex p-3 align-items-center justify-content-between '> <h3> Friends</h3>

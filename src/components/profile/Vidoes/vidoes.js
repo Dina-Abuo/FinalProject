@@ -5,7 +5,7 @@ export default function Vidoes() {
         <>
             <div className='container '>
                 <div className='row'>
-                    <div className='ms-auto me-auto  col-8 border border-white '>
+                    <div className='ms-auto me-auto  col-8 border border-white cc '>
                         <div className='row '>
                             <div className='col-4 '>
                                 <h2>Videos</h2>    

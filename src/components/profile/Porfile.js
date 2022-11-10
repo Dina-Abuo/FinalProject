@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import HeadProfile from './head/HeadProfile'
 // import Nav from './Nav/Nav'
 import './profileStyle.css'
+import Header from '../Header/Header';
 import Posts from './posts/posts'
 import Abouts from './About/Abouts';
 import Friends from './friends/Friends';
@@ -25,6 +26,7 @@ export default function Porfile() {
 
     return (
         <>
+            <Header />
             <HeadProfile />
 
             <div className='perent-button '>

@@ -1,11 +1,11 @@
 import './groups.css'
 import Post2 from './post2/post2'
 import Post from './post2/post2'
-                                                           
-                                      
+import Header from '../Header/Header'                                                                         
 export default function Groups() {
   return (
     <>
+      <Header />
     <div className="d-flex col-12">
      <div className="side1 col-5">
      <div className = "sidebar">

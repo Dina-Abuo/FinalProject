@@ -6,7 +6,7 @@ export default function Photos() {
             <div className='container'>
                 <div className='row'>
                     <div className='ms-auto me-auto  col-8'>
-                        <div className='row border-white'>
+                        <div className='row border-white cc'>
                             <div className='col-4 '>
                                 <h2>Photo</h2>    
                             </div>
