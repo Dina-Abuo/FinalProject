@@ -1,0 +1,24 @@
+* {
+    --color-blue: #3989f4;
+}
+
+.btun-Show {
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    color: var(--color-blue);
+}
+
+.btun-Show :hover {
+    text-decoration: underline;
+}
+
+.iconPlus {
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: #3989f4;
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+}

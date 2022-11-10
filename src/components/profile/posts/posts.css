@@ -1,0 +1,17 @@
+body {
+    --body-color: #f0f2f5;
+    background-color: var(--body-color);
+}
+
+
+.bb {
+    height: 400px;
+}
+
+.dd {
+
+    height: 400px;
+}
+.btu{
+    width: 200px;
+}

@@ -9,7 +9,7 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { auth } from "../../firebase/firebase";
+import { auth } from "../../data/firebase";
 import "./login.css";
 export default function SignUp() {
     const [show, setShow] = useState(false);

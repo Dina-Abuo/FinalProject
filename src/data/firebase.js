@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore"
+
 const firebaseConfig = {
     apiKey: "AIzaSyCpT5JM_LqCLJDRS0yxAD8hSXq545FQLr0",
     authDomain: "facebook-final-project123456.firebaseapp.com",
@@ -12,8 +14,13 @@ const firebaseConfig = {
     measurementId: "G-YRVGD4SND6"
 };
 
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// Initialize storage
+export const storage = getStorage(app);
+// Initialize Firestor
 export const firestore = getFirestore(app);
+// Initialize authontiction 
+export const auth = getAuth(app);
 
 
