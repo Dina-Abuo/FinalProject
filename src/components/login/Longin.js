@@ -6,8 +6,8 @@ export default function Longin() {
   return (
     <>
       <div className="parent flex">
-       <Child1/>
-       <Child2/>
+       <Child1/> 
+       <Child2/> 
       </div> 
     </>
   )

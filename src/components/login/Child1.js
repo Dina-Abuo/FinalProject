@@ -5,7 +5,7 @@ export default function Child1() {
     <>
       
         <div className="one">
-            <h1 style={{color:"blue "}}> facebook </h1>
+            <h1 className='h1' style={{color:"blue "}}> facebook </h1>
             <p>Facebook helps you connect and share with the people in your life.</p>
         </div>
       
