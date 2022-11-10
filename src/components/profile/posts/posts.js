@@ -1,4 +1,5 @@
 import React from 'react'
+import Massanger from '../../Home/bodyHome/post/Massanger'
 export default function Posts() {
     return (
         <>
@@ -9,7 +10,9 @@ export default function Posts() {
                             <div className='col-4 bb'>
                                 dina
                             </div>
-                            <div className='col-8 dd' > Abouelsoud </div>
+                            <div className='col-8 ' > 
+                             <Massanger />
+                             </div>
                         </div></div>
                 </div>
             </div>

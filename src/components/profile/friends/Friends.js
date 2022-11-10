@@ -15,8 +15,8 @@ export default function Friends() {
                             <button className='button3 ms-3'> Current City</button> </div>
                         <div className='freinds'>
                             <div className='d-flex p-3'>
-                                <div className='singlFriends rounded  border  d-flex me-3 p-2 '> <img src=' https://www.asicentral.com/media/20479/scottcolumnfig4-800.jpg' className='rounded me-2 mt-1' />  <a href=' # ' className='mt-4'><h5>Kasy Tanious Lamye</h5></a> </div>
-                                <div className='singlFriends rounded  border d-flex p-2'> <img src='https://www.asicentral.com/media/20479/scottcolumnfig4-800.jpg ' className='rounded  me-2 mt-1' />   <a href=' # ' className='mt-4'><h5>Kasy Tanious Lamye</h5></a> </div>
+                                <div className='singlFriends rounded  border  d-flex me-3 p-2 '> <img src=' https://www.asicentral.com/media/20479/scottcolumnfig4-800.jpg' className='rounded me-2 mt-1' alt="BigCo Inc. logo" />  <a href=' # ' className='mt-4'><h5>Kasy Tanious Lamye</h5></a> </div>
+                                <div className='singlFriends rounded  border d-flex p-2'> <img src='https://www.asicentral.com/media/20479/scottcolumnfig4-800.jpg ' className='rounded  me-2 mt-1' alt="BigCo Inc. logo" />   <a href=' # ' className='mt-4'><h5>Kasy Tanious Lamye</h5></a> </div>
                             </div>
 
                             {/* AllFreinds */}

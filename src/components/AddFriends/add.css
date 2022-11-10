@@ -1,0 +1,120 @@
+* {
+    --color-blue: #2374e1;
+    --color-gree: #e4e6eb;
+    --color-blue2: #3989f4;
+    --color-gree-drak: #77797c;
+    --color-light-gree: #f2f2f2;
+    --color-light-blue: #e7f3ff;
+}
+
+.card {
+    width: 210px;
+}
+
+.card a,
+.head a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card a :hover,
+.head a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.btn-blue,
+.btn-Dark,
+.btn-gree,
+.btn-light {
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    width: 80%;
+    padding: 10px;
+
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: var(--color-blue);
+}
+
+.btn-Dark {
+    color: #000;
+    background-color: var(--color-gree);
+}
+
+
+.btn-light {
+    background-color: var(--color-light-blue);
+    color: var(--color-blue2);
+}
+
+.btn-gree {
+    background-color: var(--color-light-gree);
+    color: #000;
+}
+
+.btn-gree:hover,
+.btn-light:hover {
+
+    background-color: #dfe2e8;
+}
+
+/*****************/
+
+.sid {
+    background-color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.iDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(220, 228, 235);
+}
+
+.ulSid {
+    margin: 0;
+    padding: 0;
+}
+
+.ulSid li {
+
+    list-style: none;
+    padding: 5px;
+    margin: 2px;
+}
+
+.ulSid li:hover {
+
+    border-radius: 5px;
+    background-color: var(--color-light-gree);
+}
+
+.ulSid li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ulSid li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and(max-width:990px) {
+    .part2{
+        display: none;
+    }
+
+}

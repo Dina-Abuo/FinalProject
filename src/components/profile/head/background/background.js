@@ -38,17 +38,18 @@ export default function Background() {
                 <button type='button' onClick={uploadImage} >Add</button>  </div>
 
             <label className='cover-phto rounded  mt-3 mb-2  '>
-            {
-                imageList.map((dina) => {
-                    return <>
-                        <img src={dina} />
-                    </>
-                })
-            }
-            <input type="file" className='input__image ' onChange={(e) => setImageUpLoad(e.target.files[0])} />
-        </label>
+                {
+                    imageList.map((dina) => {
+                        return <>
+                            <img src={dina}
+                                alt="BigCo Inc. logo" />
+                        </>
+                    })
+                }
+                <input type="file" className='input__image ' onChange={(e) => setImageUpLoad(e.target.files[0])} />
+            </label>
 
-         
+
 
         </>
     )
