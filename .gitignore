@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+/distribution of tasks.XLSX
+/Facebook website.pptx
+/src/data
+
 # production
 /build
 
